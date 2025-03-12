@@ -10,7 +10,16 @@
         (inputs.nvf.lib.neovimConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           modules = [
-            ./config.nix
+            ./Configs/default/config.nix
+          ];
+        })
+        .neovim;
+
+       gruvbox =
+        (inputs.nvf.lib.neovimConfiguration {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          modules = [
+            ./Configs/gruvbox/config.nix
           ];
         })
         .neovim;

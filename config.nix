@@ -1,5 +1,3 @@
-{ pkgs, lib, ... }:
-
 {
   vim = {
     theme = {
@@ -24,12 +22,9 @@
       enable = true;
 
       cmp.enable = true;
-
-      mappings.panel.open = "<C-c>";
     };
 
     languages = {
-      enableLSP = true;
       enableTreesitter = true;
 
       nix.treesitter.enable = true;
@@ -38,6 +33,9 @@
       css.treesitter.enable = true;
       java.treesitter.enable = true;
       ts.treesitter.enable = true;
+      markdown.treesitter.enable = true;
+
+      enableLSP = true;
 
       nix.enable = true;
       html.enable = true;
@@ -45,6 +43,7 @@
       css.enable = true;
       java.enable = true;
       ts.enable = true;
+      markdown.enable = true;
     };
 
     filetree.neo-tree.enable = true; 
@@ -85,6 +84,14 @@
         action = ":Telescope find_files<CR>";
         silent = true;
         desc = "Open Telescope";
+      }
+
+      {
+        key = "\\";
+        mode = ["n"];
+        action = ":nohlsearch<CR>";
+        silent = true;
+        desc = "Disable search Highlighting";
       }
     ];
   };

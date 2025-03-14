@@ -34,6 +34,7 @@
       java.treesitter.enable = true;
       ts.treesitter.enable = true;
       markdown.treesitter.enable = true;
+      dart.treesitter.enable = true;
 
       enableLSP = true;
 
@@ -44,6 +45,7 @@
       java.enable = true;
       ts.enable = true;
       markdown.enable = true;
+      dart.enable = true;
     };
 
     filetree.neo-tree.enable = true; 

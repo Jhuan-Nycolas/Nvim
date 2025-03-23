@@ -8,7 +8,6 @@
 
     dashboard.alpha = {
       enable = true;
-
       theme = "startify";
     };
 
@@ -26,26 +25,22 @@
 
     languages = {
       enableTreesitter = true;
-
-      nix.treesitter.enable = true;
-      html.treesitter.enable = true;
-      clang.treesitter.enable = true;
-      css.treesitter.enable = true;
-      java.treesitter.enable = true;
-      ts.treesitter.enable = true;
-      markdown.treesitter.enable = true;
-      dart.treesitter.enable = true;
-
       enableLSP = true;
+      enableFormat = true;
 
-      nix.enable = true;
-      html.enable = true;
-      clang.enable = true;
-      css.enable = true;
-      java.enable = true;
-      ts.enable = true;
-      markdown.enable = true;
-      dart.enable = true;
+      nix = {
+        enable = true;
+        treesitter.enable = true;
+      };
+      
+      clang = {
+        enable = true;
+        treesitter.enable = true;
+      };
+
+      html = {
+        enable = true;
+      };
     };
 
     filetree.neo-tree.enable = true; 

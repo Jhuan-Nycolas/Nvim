@@ -41,6 +41,14 @@
       html = {
         enable = true;
       };
+
+      markdown = {
+        enable = true;
+        treesitter.enable = true;
+        extensions.render-markdown-nvim = {
+          enable = true;
+        };
+      };
     };
 
     filetree.neo-tree.enable = true; 

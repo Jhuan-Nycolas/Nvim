@@ -40,6 +40,12 @@
 
       html = {
         enable = true;
+        treesitter.enable = true;
+      };
+
+      css = {
+        enable = true;
+        treesitter.enable = true;
       };
 
       markdown = {

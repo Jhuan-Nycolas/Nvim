@@ -38,6 +38,11 @@
         treesitter.enable = true;
       };
 
+      python = {
+        enable = true;
+        treesitter.enable = true;
+      };
+
       html = {
         enable = true;
         treesitter.enable = true;

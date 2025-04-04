@@ -53,6 +53,11 @@
         treesitter.enable = true;
       };
 
+      rust = {
+        enable = true;
+        treesitter.enable = true;
+      };
+
       markdown = {
         enable = true;
         treesitter.enable = true;

@@ -17,9 +17,15 @@
 
     utility = {
       oil-nvim.enable = true;
+      ccc.enable = true;
+      multicursors.enable = true;
+      surround.enable = true;
     };
 
-    ui.borders.enable = true;
+    ui = {
+      borders.enable = true;
+      nvim-ufo.enable = true;
+    };
 
     statusline.lualine.enable = true;
     telescope.enable = true;
@@ -119,6 +125,22 @@
         action = ":nohlsearch<CR>";
         silent = true;
         desc = "Disable search Highlighting";
+      }
+
+      {
+        key = "<space>o";
+        mode = ["n"];
+        action = ":Oil<CR>";
+        silent = true;
+        desc = "Open Oil.nvim plugin";
+      }
+
+      {
+        key = "<space>c";
+        mode = ["n"];
+        action = ":CccPick<CR>";
+        silent = true;
+        desc = "Open Ccc.nvim plugin";
       }
     ];
   };

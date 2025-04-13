@@ -11,6 +11,10 @@
       theme = "startify";
     };
 
+    git = {
+      gitsigns.enable = true;
+    };
+
     utility = {
       oil-nvim.enable = true;
     };

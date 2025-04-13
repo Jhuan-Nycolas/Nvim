@@ -11,12 +11,16 @@
       theme = "startify";
     };
 
+    utility = {
+      oil-nvim.enable = true;
+    };
+
     ui.borders.enable = true;
 
     statusline.lualine.enable = true;
     telescope.enable = true;
     autocomplete.nvim-cmp.enable = true;
-    
+
     assistant.copilot = {
       enable = true;
 
@@ -32,7 +36,7 @@
         enable = true;
         treesitter.enable = true;
       };
-      
+
       clang = {
         enable = true;
         treesitter.enable = true;
@@ -67,7 +71,7 @@
       };
     };
 
-    filetree.neo-tree.enable = true; 
+    filetree.neo-tree.enable = true;
     autopairs.nvim-autopairs.enable = true;
 
     ui.colorizer.enable = true;

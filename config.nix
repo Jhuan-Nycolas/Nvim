@@ -48,6 +48,11 @@
         treesitter.enable = true;
       };
 
+      haskell = {
+        enable = true;
+        treesitter.enable = true;
+      };
+
       clang = {
         enable = true;
         treesitter.enable = true;
@@ -96,6 +101,14 @@
     };
 
     keymaps = [
+      {
+        key = "<space>uf";
+        mode = ["n"];
+        action = ":UfoDisable";
+        silient = true;
+        desc = "Disable Auto Ufo";
+      }
+
       {
         key = "<space>";
         mode = ["n"];

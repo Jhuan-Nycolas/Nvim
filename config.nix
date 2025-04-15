@@ -2,7 +2,7 @@
   vim = {
     theme = {
       enable = true;
-      name = "nord";
+      name = "catppuccin";
       style = "dark";
     };
 

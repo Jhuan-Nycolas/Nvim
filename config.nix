@@ -105,7 +105,7 @@
         key = "<space>uf";
         mode = ["n"];
         action = ":UfoDisable";
-        silient = true;
+        silent = true;
         desc = "Disable Auto Ufo";
       }
 

@@ -4,6 +4,7 @@
       enable = true;
       name = "catppuccin";
       style = "macchiato";
+      transparent = true;
     };
 
     dashboard.alpha = {

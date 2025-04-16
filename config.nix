@@ -102,9 +102,9 @@
 
     keymaps = [
       {
-        key = "<space>uf";
+        key = "<space>f";
         mode = ["n"];
-        action = ":UfoDisable";
+        action = ":UfoDisable<CR>";
         silent = true;
         desc = "Disable Auto Ufo";
       }
@@ -129,6 +129,14 @@
         key = "<space><space>";
         mode = ["n"];
         action = ":Telescope find_files<CR>";
+        silent = true;
+        desc = "Open Telescope in find files mode";
+      }
+
+      {
+        key = "<space>t";
+        mode = ["n"];
+        action = ":Telescope<CR>";
         silent = true;
         desc = "Open Telescope";
       }
@@ -155,6 +163,14 @@
         action = ":CccPick<CR>";
         silent = true;
         desc = "Open Ccc.nvim plugin";
+      }
+
+      {
+        key = "<space>d";
+        mode = ["n"];
+        action = ":lua vim.diagnostic.open_float()<CR>";
+        silent = true;
+        desc = "Show code diagnostics";
       }
     ];
   };

@@ -48,6 +48,11 @@
         treesitter.enable = true;
       };
 
+      haskell = {
+        enable = true;
+        treesitter.enable = true;
+      };
+
       fsharp = {
         enable = true;
         treesitter.enable = true;

@@ -58,6 +58,11 @@
         treesitter.enable = true;
       };
 
+      java = {
+        enable = true;
+        treesitter.enable = true;
+      };
+
       clang = {
         enable = true;
         treesitter.enable = true;

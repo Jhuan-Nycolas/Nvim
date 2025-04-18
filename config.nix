@@ -182,6 +182,14 @@
         silent = true;
         desc = "Show code diagnostics";
       }
+
+      {
+        key = "df";
+        mode = ["n"];
+        action = ":lua vim.lsp.buf.definition()<CR>";
+        silent = true;
+        desc = "Go to definition";
+      }
     ];
   };
 }

@@ -19,24 +19,22 @@
     utility = {
       oil-nvim.enable = true;
       ccc.enable = true;
-      multicursors.enable = true;
       surround.enable = true;
+    };
+
+    presence = {
+      neocord = {
+        enable = true;
+      };
     };
 
     ui = {
       borders.enable = true;
-      nvim-ufo.enable = true;
     };
 
     statusline.lualine.enable = true;
     telescope.enable = true;
     autocomplete.nvim-cmp.enable = true;
-
-    assistant.copilot = {
-      enable = true;
-
-      cmp.enable = true;
-    };
 
     languages = {
       enableTreesitter = true;
@@ -112,14 +110,6 @@
 
     keymaps = [
       {
-        key = "<space>f";
-        mode = ["n"];
-        action = ":UfoDisable<CR>";
-        silent = true;
-        desc = "Disable Auto Ufo";
-      }
-
-      {
         key = "<space>";
         mode = ["n"];
         action = ":";
@@ -128,7 +118,7 @@
       }
 
       {
-        key = ";";
+        key = "<space>e";
         mode = ["n"];
         action = ":Neotree toggle<CR>";
         silent = true;
@@ -144,7 +134,7 @@
       }
 
       {
-        key = "<space>t";
+        key = "<space>o";
         mode = ["n"];
         action = ":Telescope<CR>";
         silent = true;
@@ -160,7 +150,7 @@
       }
 
       {
-        key = "<space>o";
+        key = "-";
         mode = ["n"];
         action = ":Oil<CR>";
         silent = true;
